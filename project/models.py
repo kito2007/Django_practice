@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Projects(models.Model):
+class Project(models.Model):
     title = models.CharField('타이틀', max_length=200)
     description = models.TextField('프로젝트 내용')
     tech = models.TextField('사용기술', max_length=100)
