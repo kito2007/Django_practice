@@ -13,7 +13,9 @@
           <div class="card-inner">
             <a href="{% url 'project:detail' item.id %}">
               <div class="card-img">
+                {% if item.image %}
                 <img src="{{ item.image.url }}" alt="{{ item.title }}" width="300px">
+                {% endif %}
               </div>
               <div class="card-title">
                 <p>{{ item.title }}</p>
